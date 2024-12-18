@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+      New Perspectives on HTML and CSS
+      Assignment 1
+
+      Music tour of a band
+      Author: Xinyue Luo
+      Student ID: 18036258
+      Date: 10/12/2020
+
+      Filename: bptour1.html
+    -->
+
+    <title> BLACKPINK </title>
+    <link rel="icon" href="BP_Logo.jpg" type="image/x-icon" /><!--let icon on the webside page-->
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="bp_layout.css" />
+</head>
+
+<body onload="startTime()">
+
+
+    <header>
+        <h1><img src="BP_Logo.jpg" alt="BLACKPINK" width="300" height="110"></h1>
+    </header>
+   
+    <!--Hyperlink inside & outside connection with youtube and spotify-->
+    <nav>
+        <ul>
+            <li><a href="bptour1.html">BP Home</a></li>
+            <li><a href="BP_view2.html">BP Intro</a></li>
+            <li><a href="https://open.spotify.com/artist/41MozSoPIsD1dJM0CLPjZF">BP Album</a></li>
+            <li><a href="https://www.youtube.com/channel/UCOmHUn--16B90oW2L6FRR3A">BP Video</a></li>
+            <li><a href="BP_thing3.html">BP Pic_Wall</a></li>
+        </ul>
+    </nav>
+
+    <!--use table to arrange the picture-->
+    <table>
+        <tr>
+            <td style="width: 200px;"></td>
+            <td style="width: 400px;"><!--Limit the width -->
+                <a href="BP_view2.html">
+                    <div class="jeCartoon"></div>
+                </a>
+            </td>
+            <td style="width: 400px;">
+                <a href="BP_view2.html">
+                    <div class="roCartoon"></div>
+                </a>
+            </td>
+            <td style="width: 400px;">
+                <a href="BP_view2.html">
+                    <div class="liCartoon"></div>
+                </a>
+            </td>
+            <td style="width: 400px;">
+                <a href="BP_view2.html">
+                    <div class="jiCartoon"></div>
+                </a>
+            </td>
+            <td>
+                <div id="txt"></div>
+            </td>
+        </tr>
+    </table>
+    <!--time-->
+    <script>
+        function startTime(){
+        var today=new Date();
+        var h=today.getHours();
+        var m=today.getMinutes();
+        var s=today.getSeconds();
+        m=checkTime(m);
+        s=checkTime(s);
+        document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+        t=setTimeout(function(){startTime()},500);
+        }
+        function checkTime(i){ //Use 24-hour clock
+        if (i<10){
+        i="0" + i;
+        }
+        return i;
+        }
+    </script>
+</body>
+</html>

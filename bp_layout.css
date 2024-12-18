@@ -1,0 +1,161 @@
+/*
+    New Perspectives on HTML and CSS
+    Assignment 1
+
+    Music tour of a band
+    Author: Xinyue Luo
+    Student ID: 18036258
+    Date: 10/12/2020
+
+    Filename: bp_layout.css
+ */
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	width: auto;
+	background-color: #000000;
+    color: white
+}
+
+nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+li
+{
+    display:inline;
+}
+
+a:link,a:visited{
+	font-weight:bold;
+	color:#000000;
+	background-color:#FFB6C1;
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+
+a:hover,a:active{
+	background-color:#CCEEFF;
+}
+.jeCartoon {
+    height: 330px;
+    width: 140px;
+    margin-left: 14px;
+    margin-top: 20px;
+    background-image: url(Jennie_cartoon.jpg);
+    background-size: 100% 100%;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s, transform 1s;
+}
+
+.jeCartoon:hover, .jeCartoon:active{
+    background-image: url(Jennie_real.jpg);
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera*/
+    transform: rotate(180deg);
+}
+
+tr td a:link {
+    background-color: black;
+    padding: 0;
+}
+
+div.roCartoon {
+    height: 330px;
+    width: 140px;
+    margin-left: 14px;
+    margin-top: 20px;
+    background-image: url(Rose_cartoon.jpg);
+    background-size: 100% 100%;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s, transform 1s;
+}
+
+div.roCartoon:hover,#roCartoon:active{
+	background-image: url(Rose_real.jpg);
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+div.liCartoon{
+   	height: 330px;
+    width: 140px;
+    margin-left: 14px;
+    margin-top: 20px;
+	background-image: url(Lisa_cartoon.jpg);
+   	background-size: 100% 100%;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+   	transition: width 0.5s, height 0.5s, transform 1s;
+}
+
+div.liCartoon:hover,#liCartoon:active{
+	background-image: url(Lisa_real.jpg);
+	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+div.jiCartoon{
+   	height: 330px;
+    width: 140px;
+   	margin-left: 14px;
+   	margin-top: 20px;
+	background-image: url(Jisoo_cartoon.jpg);
+   	background-size: 100% 100%;
+	-webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s, height 0.5s, transform 1s;
+}
+
+div.jiCartoon:hover,#jiCartoon:active{
+	background-image: url(Jisoo_real.jpg);
+  	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    position: relative;
+}
+
+.box {
+    float: left;
+    padding: 5px;
+    transition: all 2s;
+}
+
+.box_img {
+    padding: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+}
+
+.box_img img {
+    width: 250px;
+    height: auto;
+
+}
+
+#view img{
+    height: 25%;
+    margin-left: 14px;
+    margin-top: 20px;
+}
+
+#view abbr p {
+    color: white;
+}
+
+#view abbr{
+    font-size: xx-large;
+}
